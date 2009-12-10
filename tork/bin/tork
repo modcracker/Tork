@@ -1,0 +1,7 @@
+#!/usr/bin/python
+import sys
+sys.path.append("../../")
+from tork.core import manage
+  
+if __name__ == '__main__':
+  manage.run()
