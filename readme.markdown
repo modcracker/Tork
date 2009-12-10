@@ -9,7 +9,7 @@ The source code for Tork is managed via Git and is hosted on GitHub.com.  For mo
 
 ### Initialization
 
-  $ git clone git@github.com/thegoleffect/Tork.git
+    $ git clone git@github.com/thegoleffect/Tork.git
 
 
 ## License
