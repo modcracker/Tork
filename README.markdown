@@ -2,6 +2,17 @@
 
 Tork is a rapid development, deployment, and process management system for use with the Tornado Web Server and Python.  It simplifies and automates many of the common tasks of creating a Tornado Web application.  Then, there is more time for the developer(s) to focus on the core features of the application and less time worrying about deployment.  As a process management system, it can also help with monitoring server instances.
 
+## History
+
+Tork was created in late 2009 as a result of code created for Boston.StartupWeekend.org (#swboston).  It managed our Tornado Web server instances and handled the deployment pipeline.  But it wasn't perfect or general enough to apply to other projects.  So, thus, Tork was born.
+
+## The Gist
+
+    $ tork init %project_name%
+    $ tork app %app_name%
+    $ tork start|stop|restart %app_name%
+    $ tork push %app_name%
+
 
 ## Quick Start
 ### Git it on
