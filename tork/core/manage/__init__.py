@@ -9,6 +9,7 @@ options_list = [
 commands_list = ["init", "start", "stop", "restart", "test"]
 
 def run(argv=None):
+  """ Runs functions that the user calls via the command line. """
   parser = OptionParser(usage="%s subcommand [options] [args]",
                         version=tork.get_version())
   for option in options_list:
