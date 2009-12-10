@@ -20,11 +20,14 @@ def run(argv=None):
   except Exception, e:
     pass # Ignore OptionError
   
-  if args[0] in commands_list:
-    print args[0], "called"
+  if len(args) >= 1:
+    if args[0] in commands_list:
+      print args[0], "called"
+    else:
+      print "Usage:", parser.usage %(os.path.basename(sys.argv[0]))
+      print ""
+      print "Type 'tork help' for usage information"
   else:
     print "Usage:", parser.usage %(os.path.basename(sys.argv[0]))
-    print ""
-    print "Type 'tork help' for usage information"
   
   
