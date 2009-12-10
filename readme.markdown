@@ -8,6 +8,7 @@ Tork is a rapid development, deployment, and process management system for use w
 The source code for Tork is managed via Git and is hosted on GitHub.com.  For more information on installing Git, please see the the GitHub [help documentation](http://help.github.com/).  
 
 ### Initialization
+To obtain a copy of Tork, perform the following commands:
 
     $ git clone git@github.com/thegoleffect/Tork.git
 
