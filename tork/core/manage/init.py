@@ -1,6 +1,6 @@
 import sys, os, distutils.dir_util
 
-sample_site_directory = "/Users/vnguyen/Dropbox/Projects/Tork/sample_site"  # @@@2 Todo(Van): use /opt/local or some convention
+sample_site_directory = "/Users/vnguyen/Dropbox/Projects/Tork/sample_site"  # @@@1 Todo(Van): use /opt/local or some convention
 
 def init(argv):
   """Initialize a Tork project in the current directory if that is possible."""
