@@ -3,8 +3,8 @@ from optparse import OptionParser
 import tork
 
 options_list = [
-  [["-i", "--init"], {'dest':"init_flag", "default":False, "help":"Initialize a Tornado Web application with MVC folders"}],
-  [["-t", "--test"], {'dest':"test_flag", "default":False, "help":"Run all tests for local application"}]
+  # [["-i", "--init"], {'dest':"init_flag", "default":False, "help":"Initialize a Tornado Web application with MVC folders"}],
+  # [["-t", "--test"], {'dest':"test_flag", "default":False, "help":"Run all tests for local application"}]
 ]
 commands_list = ["init", "start", "stop", "restart", "test"]
 
@@ -20,9 +20,10 @@ def run(argv=None):
   except Exception, e:
     pass # Ignore OptionError
   
-  if len(args) >= 1:
+  if 3 > len(args) > 0:
     if args[0] in commands_list:
-      print args[0], "called"
+      exec("from " + args[0] + " import " + args[0])
+      exec(args[0]+"(args[1:])")
     else:
       print "Usage:", parser.usage %(os.path.basename(sys.argv[0]))
       print ""
