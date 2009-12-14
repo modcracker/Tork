@@ -4,15 +4,16 @@ Tork is a rapid development, deployment, and process management system for use w
 
 ## History
 
-Tork was created in late 2009 as a result of code created for Boston.StartupWeekend.org (#swboston).  It managed our Tornado Web server instances and handled the deployment pipeline.  But it wasn't perfect or general enough to apply to other projects.  So, thus, Tork was born.
+Tork was created in late 2009 as a result of code created for Boston.StartupWeekend.org (#swboston).  It managed our Tornado Web server instances and handled the deployment pipeline.  But it wasn't perfect or general enough to apply to other projects.  So, thus, Tork was born.  It is cleaned up, re-factored, and improved from our experience using it.
 
 ## The Gist
+### Development
 
-    $ tork init %project_name%
-    $ tork app %app_name%
-    $ tork start|stop|restart %app_name%
-    $ tork push %app_name%
-
+    $ tork init %project_name%                # completed
+    $ tork start|stop|restart %app_name%      # planned
+    
+### Monitoring
+Tork is actually used to monitor other Tork instances.  Add you servers to the admin panel and Tork will periodically check server status and alert you if a server is down.  It also displays useful statistics such as number of open asynchronous connections, plots page hits per second, response time, etc.  Upon server failure, in the report, you can see the most recent stack trace that caused the error, you can reboot the instance, you can rollback to a previous revision, etc.
 
 ## Quick Start
 ### Git it on
@@ -27,7 +28,9 @@ To obtain a copy of Tork, perform the following commands:
 
 ### WE'LL GET THERE WHEN WE GET THERE!
 
-At the moment, there's no code... so you can neither install nor run Tork.  But we'll get there when we get there. :)
+At the moment, there's no code... so you can neither install nor truly run Tork.  
+
+If you're feeling adventurous though, you can check out the most recent build and simply add /FOLDER-YOU-STORE-TORK-IN/tork/bin to your PATH environment variable and /FOLDER-YOU-STORE-TORK-IN/ to your PYTHONPATH environment variable.  However, I will not give any support for Tork until its officially released.
 
 ## License
 
