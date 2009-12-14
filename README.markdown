@@ -12,21 +12,23 @@ Tork was created in late 2009 as a result of code created for Boston.StartupWeek
     $ tork init %project_name%                # completed
     $ tork start|stop|restart %app_name%      # planned
     
-### Monitoring
-Tork is actually used to monitor other Tork instances.  Add you servers to the admin panel and Tork will periodically check server status and alert you if a server is down.  It also displays useful statistics such as number of open asynchronous connections, plots page hits per second, response time, etc.  Upon server failure, in the report, you can see the most recent stack trace that caused the error, you can reboot the instance, you can rollback to a previous revision, etc.
+### Monitoring & Deployment
+Tork is actually used to monitor other Tork instances.  Add you servers to the tork-monitor and Tork will periodically check server status and alert you if a server is down.  It also displays useful statistics such as number of open asynchronous connections, plots page hits per second, response time, etc.  Upon server failure, in the report, you can see the most recent stack trace that caused the error, you can reboot the instance, you can rollback to a previous revision, etc.
+
+If you tie Tork into Git & Github, like we do, you can manage your deployments using Tork through the processes of continuous integration and continuous deployment.  If you make a commit and push to Github, tork-monitor can automatically run xUnit tests and deploy on success to a fleet of servers.  You can divide the tests among multiple slave servers as well to shorten test time.  If any tests fail, the deployment does not go through.  Or even if you don't like the current revision, you can revert to a previous state quickly and easily through tork-monitor.  
 
 ## Quick Start
 ### Git it on
 
 The source code for Tork is managed via Git and is hosted on GitHub.com.  For more information on installing Git, please see the the GitHub [help documentation](http://help.github.com/).  
 
-### Initialization
+### Git your copy
 
 To obtain a copy of Tork, perform the following commands:
 
     $ git clone git@github.com/thegoleffect/Tork.git
 
-### WE'LL GET THERE WHEN WE GET THERE!
+### WE'LL Git THERE WHEN WE Git THERE!
 
 At the moment, there's no code... so you can neither install nor truly run Tork.  
 
