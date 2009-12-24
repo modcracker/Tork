@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import os
-from controllers.homehandler import HomeHandler
+from application.controllers.homehandler import HomeHandler
 
 def get_routes():
   return [

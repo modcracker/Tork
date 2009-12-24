@@ -13,7 +13,7 @@ import tornado.web
 from tornado.options import define, options
 define("port", default=8000, help="run on the given port", type=int)
 
-from config.settings import get_routes, get_settings
+from application.settings import get_routes, get_settings
 
 class Application(tornado.web.Application):
   def __init__(self):
