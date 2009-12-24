@@ -32,7 +32,9 @@ To obtain a copy of Tork, perform the following commands:
 
 At the moment, there's no code... so you can neither install nor truly run Tork.  
 
-If you're feeling adventurous though, you can check out the most recent build and simply add /FOLDER-YOU-STORE-TORK-IN/tork/bin to your PATH environment variable and /FOLDER-YOU-STORE-TORK-IN/ to your PYTHONPATH environment variable.  However, I will not give any support for Tork until its officially released.
+If you're feeling adventurous though, you can check out the most recent build and simply add /FOLDER-YOU-STORE-TORK-IN/tork/bin to your PATH environment variable and /FOLDER-YOU-STORE-TORK-IN/ to your PYTHONPATH environment variable.  This will allow you to call "$tork init project_name".  After that, you need to add your project name's directory to the pythonpath variable.  
+
+For the time being, I will not give any support for Tork until its officially released.
 
 ## License
 
